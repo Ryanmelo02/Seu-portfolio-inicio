@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Site Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="profile-img-container">
+      <img id="profile-img" class="profile-img" src="seu-avatar.jpg" alt="Foto de Perfil">
+      <input type="file" id="file-input" accept="image/*" onchange="showImage(event)" style="display: none;">
+      <label class="upload-btn" for="file-input">Enviar Foto</label>
+    </div>
+
+    <div class="profile-info">
+      <h1>Bem-vindo ao Seu Portfólio</h1>
+      <div id="form-container">
+        <div class="form-group">
+          <label class="form-label" for="input-nome">Nome:</label>
+          <input type="text" id="input-nome" class="form-input" placeholder="Digite seu nome">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="input-email">Email:</label>
+          <input type="email" id="input-email" class="form-input" placeholder="Digite seu email">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="input-telefone">Telefone:</label>
+          <input type="tel" id="input-telefone" class="form-input" placeholder="Digite seu telefone">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="input-experiencia">Experiência Profissional:</label>
+          <textarea id="input-experiencia" class="form-input" rows="4" placeholder="Digite sua experiência profissional"></textarea>
+        </div>
+        <button class="save-btn" onclick="saveInformation()">Salvar Informações</button>
+      </div>
+
+      <div id="info-container" style="display:none;">
+        <p>Nome: <span id="nome"></span></p>
+        <p>Email: <span id="email"></span></p>
+        <p>Telefone: <span id="telefone"></span></p>
+        <p>Experiência Profissional: <span id="experiencia"></span></p>
+        <button class="edit-btn" onclick="editarInformacoes()">Editar Informações</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

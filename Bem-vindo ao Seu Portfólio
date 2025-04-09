@@ -1,0 +1,6 @@
+seu-portifolio/
+├── index.html      (HTML principal com referências externas)
+├── style.css       (Estilos separados para melhor organização)
+└── script.js       (JavaScript limpo, comentado e funcional)/
+# seu Portfólio
+Site simples feito com HTML, CSS e JS, com upload de imagem e formulário de dados pessoais.
